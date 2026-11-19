@@ -1,0 +1,1060 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyClock - Peduli Lingkungan</title>
+
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <style>
+      /* GAMBAR PERTAMA DI BERANDA: TAMPIL UTUH */
+      .beranda > img {
+        object-fit: contain !important;
+        object-position: center;
+        width: 45%;
+        height: auto;
+        max-height: 420px;
+      }
+
+      /* BAHASA INGGRIS: 1 FOTO + 3 KOLOM TEKS */
+      .english-box {
+        display: grid !important;
+        grid-template-columns: 150px repeat(3, minmax(0, 1fr));
+        align-items: stretch;
+        gap: 15px;
+        width: 100%;
+        background: #dceeff;
+        padding: 20px;
+        border-radius: 15px;
+        box-sizing: border-box;
+      }
+
+      .english-image {
+        width: 100%;
+        height: 100%;
+        min-height: 300px;
+        object-fit: contain;
+        object-position: center;
+        background: #fff;
+        border-radius: 12px;
+        display: block;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+      }
+
+      .english-columns {
+        display: contents;
+      }
+
+      .english-columns .mapel-card {
+        min-width: 0;
+        width: 100%;
+        box-sizing: border-box;
+        padding: 18px;
+        background: white;
+        border-radius: 12px;
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+        overflow-wrap: break-word;
+      }
+
+      .english-columns .mapel-card h3 {
+        font-size: 16px;
+      }
+
+      .english-columns .mapel-card details {
+        margin-top: 12px;
+        line-height: 1.6;
+      }
+
+      .english-columns .mapel-card summary {
+        cursor: pointer;
+        font-weight: bold;
+        margin-bottom: 8px;
+      }
+
+      /* TABLET */
+      @media (max-width: 1000px) {
+        .english-box {
+          grid-template-columns: 130px repeat(2, minmax(0, 1fr));
+        }
+
+        .english-image {
+          grid-row: span 2;
+        }
+      }
+
+      /* HP */
+      @media (max-width: 650px) {
+        .beranda > img {
+          width: 100%;
+          max-height: 300px;
+          object-fit: contain !important;
+        }
+
+        .english-box {
+          display: flex !important;
+          flex-direction: column;
+          align-items: stretch;
+        }
+
+        .english-image {
+          width: 150px;
+          height: 250px;
+          min-height: unset;
+          margin: 0 auto;
+        }
+
+        .english-columns {
+          display: flex;
+          flex-direction: column;
+          gap: 15px;
+          width: 100%;
+        }
+
+        .english-columns .mapel-card {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- NAVIGASI -->
+    <header>
+      <nav class="navbar">
+        <h2>♻️KeyClock</h2>
+        <ul>
+          <li><a href="#home">Beranda</a></li>
+          <li><a href="#mapel">Mapel</a></li>
+          <li><a href="#karya">Galeri</a></li>
+          <li><a href="#tim">Tim Kami</a></li>
+          <li><a href="#pesan">Kontak</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HOME -->
+    <section id="home" class="beranda">
+      <div class="beranda-text">
+        <h1>Sampah,</h1>
+        <h3>Jaga Bumi dengan Prinsip 3R</h3>
+        <p>
+          Kurangi sampah, gunakan kembali, dan daur ulang. Langkah kecil kita
+          hari ini adalah investasi untuk bumi di masa depan!. Proyek ini
+          menggabungkan pembelajaran lintas mata dengan metode waterfall.
+        </p>
+        <a href="#beranda" class="btn">Mulai Belajar</a>
+      </div>
+
+      <img src="tempat_sampah_biru-hijau (1).png" alt="Lingkungan" />
+    </section>
+
+    <!-- MATERI 3R -->
+    <section id="beranda" class="materi">
+      <h2>Materi Pengolahan Sampah 3R</h2>
+      <br />
+
+      <p class="subtitle">
+        3R adalah cara mengelola sampah dengan mengurangi penggunaan barang yang
+        menghasilkan sampah, menggunakan kembali barang yang masih bisa dipakai,
+        dan mendaur ulang sampah menjadi barang yang bermanfaat. Tujuannya agar
+        sampah tidak menumpuk dan lingkungan tetap bersih.
+      </p>
+
+      <div class="materi-container">
+        <div class="materi-card">
+          <h3>Reduce</h3>
+          <p>Mengurangi penggunaan barang yang menghasilkan sampah.</p>
+        </div>
+
+        <div class="materi-card">
+          <h3>Reuse</h3>
+          <p>Menggunakan kembali barang yang masih layak digunakan.</p>
+        </div>
+
+        <div class="materi-card">
+          <h3>Recycle</h3>
+          <p>Mendaur ulang sampah menjadi barang baru yang bermanfaat.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MAPEL -->
+    <section id="mapel" class="section">
+      <h2>Mata Pelajaran</h2>
+      <br />
+
+      <!-- IPAS -->
+      <div class="mapel-item">
+        <h3>IPAS</h3>
+
+        <div class="mapel-box">
+          <img
+            src="kryboard-bks.jpeg"
+            alt="Jam dari keyboard bekas"
+            class="keyboard-bks"
+          />
+
+          <div class="mapel-text">
+            <h4>Analisis Limbah</h4>
+            <p>
+              Pengolahan keyboard bekas menjadi jam merupakan salah satu bentuk
+              pemanfaatan sampah elektronik. Kegiatan ini mengajarkan kita untuk
+              mengubah barang yang tidak terpakai menjadi benda yang memiliki
+              nilai guna.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- MATEMATIKA -->
+      <div class="mapel-item">
+        <h3>Matematika</h3>
+
+        <div class="mapel-box">
+          <div class="mapel-columns math-gallery">
+            <!-- TUGAS ALWAH -->
+            <div class="mapel-card">
+              <img src="flayer-alwa.jpeg" alt="Flayer Alwa" />
+              <h4>Tugas Alwah</h4>
+
+              <details>
+                <summary>Lihat Detail</summary>
+                <div>
+                  } <b>Langkah 1</b><br />
+                  y = harga 1 Smart Trans Bin.<br /><br />
+
+                  dc. .. . m , . . x = harga 1 Hiasan Perifil pensil.<br />
+                  <b>Langkah 2</b><br />
+                  Paket A = 1 Smart Trans Bin dan 2 Hiasan Perifil pensil Rp
+                  350.000<br />
+                  Paket B = 1 Hiasan Perifil pensil dan 2 Smart Trans Bin Rp
+                  550.000<br /><br />
+
+                  <b>Langkah 3</b><br />
+                  Ditanya = x dan y?<br /><br />
+
+                  <b>Langkah 4</b><br />
+                  2x + y = 350.000<br />
+                  x + 2y = 550.000<br /><br />
+
+                  <b>Langkah 5</b><br />
+                  METODE ELIMINASI<br />
+                  2x + y = 350.000 ||×2<br />
+                  x + 2y = 550.000 ||×1<br />
+                  <hr width="40%" />
+                  4x + 2y = 700.000<br />
+                  x + 2y = 550.000 -<br />
+                  <hr width="40%" />
+                  3x = 150.000<br />
+                  3x = 150.000<br />
+                  x = 150.000 / 3<br />
+                  x = 50.000<br />
+
+                  <br />
+
+                  METODE SUBSTITUSI<br />
+                  2x + y = 350.000<br />
+                  2 x 50.000 + y = 350.000<br />
+                  100.000 + y = 350.000<br />
+                  y = 350.000 - 100.000<br />
+                  y = 250.000<br /><br />
+
+                  <b>Langkah 6</b><br />
+                  Jadi harga dari 1 Hiasan Perifil pensil Rp 50.000 dan harga 1
+                  Smart Trans Bin Rp 250.000
+                </div>
+              </details>
+            </div>
+
+            <!-- TUGAS NESHA -->
+            <div class="mapel-card">
+              <img src="flayer-nesha.jpeg" alt="Flayer Nesha" />
+              <h4>Tugas Nesha</h4>
+
+              <details>
+                <summary>Lihat Detail</summary>
+                <div>
+                  <b>Langkah 1</b><br />
+                  x = harga 1 Tas Laptop.<br />
+                  y = harga 1 Lampu.<br /><br />
+
+                  <b>Langkah 2</b><br />
+                  Paket A = 1 Tas Laptop dan 1 Lampu Rp 140.000<br />
+                  Paket B = 1 Tas Laptop dan 2 Lampu Rp 200.000<br /><br />
+
+                  <b>Langkah 3</b><br />
+                  Ditanya = x dan y?<br /><br />
+
+                  <b>Langkah 4</b><br />
+                  x + y = 140.000<br />
+                  x + 2y = 200.000<br /><br />
+
+                  <b>Langkah 5</b><br />
+                  METODE ELIMINASI<br />
+                  x + y = 140.000<br />
+                  x + 2y = 200.000 -<br />
+                  <hr width="30%" />
+                  2x + 2y = 280.000<br /><br />
+
+                  x = 80.000<br /><br />
+
+                  METODE SUBSTITUSI<br />
+                  x + y = 140.000<br />
+                  80.000 + y = 140.000<br />
+                  y = 140.000 - 80.000<br />
+                  y = 60.000<br /><br />
+
+                  <b>Langkah 6</b><br />
+                  Jadi harga 1 Tas Laptop Rp 80.000 dan harga 1 Lampu Rp 60.000
+                </div>
+              </details>
+            </div>
+
+            <!-- TUGAS CYNTIA -->
+            <div class="mapel-card">
+              <img src="flayer-cintya.jpg" alt="Flayer Cyntia" />
+              <h4>Tugas Cyntia</h4>
+              <details>
+                <summary>Lihat Detail</summary>
+                <div>
+                  <b>Langkah 1</b><br />
+                  x = harga 1 Sound System CPW Bekas.<br />
+                  y = harga 1 Lampu Futuristik.<br />
+
+                  <b>Langkah 2</b><br />
+                  Paket A = 2 Sound System CPW Bekas dan 3 Lampu Futuristik Rp
+                  480.000<br />
+                  Paket B = 3 Sound System CPW Bekas dan 2 Lampu Futuristik Rp
+                  570.000<br />
+
+                  <b>Langkah 3</b><br />
+                  Dicari = x dan y?
+                  <br />
+
+                  <b>Langkah 4</b><br />
+                  2x + 3y = 480.000<br />
+                  3x + 2y = 570.000
+                  <br />
+
+                  <b>Langkah 5</b><br />
+                  METODE ELIMINASI<br />
+                  2x + 3y = 480.000 (1)<br />
+                  3x + 2y = 570.000 (2)<br />
+                  <br />
+                  6x + 9y = 1.440.000 (3)<br />
+                  <br />
+                  6x + 4y = 1.140.000 (4)<br />
+                  <br />
+                  Kurangkan (3) - (4):<br />
+                  (6x + 9y) - (6x + 4y) = 1.440.000 - 1.140.000<br />
+                  5y = 300.000<br />
+                  y = 300.000 / 5<br />
+                  y = 60.000<br />
+                  <br />
+
+                  METODE SUBSTITUSI<br />
+                  2x + 3y = 480.000<br />
+                  2x + 3(60.000) = 480.000<br />
+                  2x + 180.000 = 480.000<br />
+                  2x = 480.000 - 180.000<br />
+                  2x = 300.000<br />
+                  x = 300.000 / 2<br />
+                  x = 150.000
+                  <br />
+
+                  <b>Langkah 6</b><br />
+                  Jadi harga 1 Sound System CPW Bekas Rp 150.000 dan harga 1
+                  Lampu Futuristik Rp 60.000
+                </div>
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br /><br />
+
+      <!-- BAHASA INGGRIS -->
+      <div class="mapel-item">
+        <h3>Bahasa Inggris</h3>
+
+        <div class="english-box">
+          <!-- KOLOM 1: FOTO -->
+          <img
+            src="kolaborasi-11.jpeg"
+            alt="Kolaborasi Bahasa Inggris"
+            class="english-image"
+          />
+
+          <!-- KOLOM 2, 3, DAN 4: TEKS -->
+          <div class="english-columns">
+            <!-- OBSERVATION REPORT ALWA -->
+            <div class="mapel-card">
+              <h4>Observation Report - Alwah</h4>
+
+              <h3>How an old keyboard is transformed into a desk clock?</h3>
+
+              <details>
+                <summary>Paragraph 1 - General statement</summary>
+                Electronic waste is one of the environmental problems caused by
+                the rapid development of technology. Old computer keyboards are
+                often discarded when they are damaged or no longer needed.
+                However, these keyboards contain materials that can still be
+                reused. One creative way to reduce this waste is by transforming
+                an old keyboard into a decorative desk clock. This
+                transformation shows how electronic waste can become a useful
+                and valuable product.
+              </details>
+
+              <details>
+                <summary>Paragraph 2 - The transformation Process</summary>
+                The transformation begins when an unused keyboard is separated
+                into individual components. Its plastic keys are removed from
+                the main keyboard structure and separated from other electronic
+                parts. The keys are then cleaned to remove dust and dirt. After
+                that, the necessary materials, such as a clock mechanism and a
+                clock base, are prepared. The keyboard keys will become
+                decorative materials for the new product.
+              </details>
+
+              <details>
+                <summary>Paragraph 3 - The Formation of a New Product</summary>
+                The cleaned keyboard keys are arranged around a circular or
+                square clock surface. Some keys can be used to represent the
+                numbers on the clock, while others are attached as decorations.
+                A clock mechanism is installed at the center of the design,
+                including the clock hands. Once all the components are firmly
+                attached, the separate materials become one complete and
+                functional desk clock.
+              </details>
+
+              <details>
+                <summary>Paragraph 4 - The Result and Its Impact</summary>
+                As a result, an old computer keyboard is transformed into a
+                unique desk clock that has both functional and aesthetic value.
+                The product can be used to show the time while also serving as a
+                creative decoration for a desk or study room. This
+                transformation reduces the amount of electronic waste and
+                encourages the reuse of available materials. Therefore,
+                recycling old computer keyboards into desk clocks is one way to
+                support a more sustainable environment.
+              </details>
+            </div>
+
+            <!-- OBSERVATION REPORT NESHA -->
+            <div class="mapel-card">
+              <h4>Observation Report - Nesha</h4>
+
+              <h3>How an old keyboard is transformed into a desk clock?</h3>
+
+              <details>
+                <summary>Paragraph 1 - General statement</summary>
+                Nowadays, electronic waste has become a serious issue because
+                many electronic devices are replaced with newer ones. One
+                example is an old computer keyboard that is no longer used.
+                Instead of throwing it away, the keyboard can be turned into a
+                creative handmade product. By using its buttons and other
+                reusable parts, people can create a unique desk clock that is
+                both useful and attractive.
+              </details>
+
+              <details>
+                <summary>Paragraph 2 - The transformation Process</summary>
+                First, an unused computer keyboard is collected and prepared for
+                the recycling process. The keyboard buttons are carefully taken
+                out and separated from the other components. Then, the buttons
+                are washed and dried to make sure they are clean. After that, a
+                clock machine, clock hands, and a suitable base are prepared.
+                These materials will be combined to create a new clock.
+              </details>
+
+              <details>
+                <summary>Paragraph 3 - The Formation of a New Product</summary>
+                Next, the keyboard buttons are placed around the clock base to
+                form the numbers or hour markers. They can be arranged
+                creatively to make the clock look more interesting. The clock
+                machine is attached to the back of the base, while the clock
+                hands are installed in the middle. After checking that every
+                part is properly attached, a battery is added to make the clock
+                work.
+              </details>
+
+              <details>
+                <summary>Paragraph 4 - The Result and Its Impact</summary>
+                Finally, the old keyboard becomes a handmade desk clock with a
+                different and creative appearance. Besides helping people keep
+                track of time, this clock can also be used as a decoration for a
+                bedroom, classroom, or workspace. This project gives unused
+                electronic materials a second purpose and helps reduce waste. It
+                also teaches us to be more creative and responsible in
+                protecting the environment.
+              </details>
+            </div>
+
+            <!-- OBSERVATION REPORT CYNTIA -->
+            <div class="mapel-card">
+              <h4>Observation Report - Cyntia</h4>
+
+              <h3>How an old keyboard is transformed into a desk clock?</h3>
+
+              <details>
+                <summary>Paragraph 1 - General statement</summary>
+                The increasing use of electronic devices has resulted in a large
+                amount of electronic waste. Many old keyboards are left unused
+                or thrown away because they are no longer functioning properly.
+                In fact, some parts of these keyboards can still be useful. One
+                interesting idea is to recycle an old keyboard into a handmade
+                desk clock. This project combines creativity with environmental
+                awareness.
+              </details>
+
+              <details>
+                <summary>Paragraph 2 - The transformation Process</summary>
+                To begin the project, an old computer keyboard is collected as
+                the main material. The keyboard keys are removed one by one and
+                separated from the electronic components. Next, all the keys are
+                cleaned carefully to make them look neat. Other materials,
+                including a piece of cardboard, a clock machine, clock hands,
+                glue, and a battery, are also prepared before starting the
+                construction.
+              </details>
+
+              <details>
+                <summary>Paragraph 3 - The Formation of a New Product</summary>
+                After preparing the materials, the cardboard is cut into a
+                suitable shape to become the clock base. A small hole is made in
+                the center for the clock mechanism. Then, the keyboard keys are
+                arranged around the base to mark the hours. They are attached
+                using glue to keep them in place. Finally, the clock machine and
+                its hands are installed, and the battery is inserted to activate
+                the clock.
+              </details>
+
+              <details>
+                <summary>Paragraph 4 - The Result and Its Impact</summary>
+                The finished product is a handmade desk clock made from an old
+                computer keyboard. Its unusual design makes it an interesting
+                decoration for a study table or bedroom. More importantly, this
+                project gives discarded materials a new function instead of
+                allowing them to become waste. Through this simple activity, we
+                can develop creativity, save resources, and contribute to
+                environmental protection.
+              </details>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KARYA -->
+    <section id="karya" class="section karya">
+      <h2>Hasil Karya Kami</h2>
+      <br />
+
+      <div class="karya-container">
+        <!-- JAM KEYBOARD -->
+        <div class="karya-card">
+          <img src="keyboard.jpeg" alt="Jam dari Keyboard" />
+          <h3>Jam dari Keyboard</h3>
+          <p>Memanfaatkan keyboard bekas menjadi jam yang bermanfaat.</p>
+
+          <details>
+            <summary>Lihat Detail</summary>
+            <h4>Ulasan Produk</h4>
+            <p>
+              KeyClock merupakan kerajinan berupa jam yang dibuat dari tombol
+              keyboard bekas. Produk ini memanfaatkan limbah elektronik menjadi
+              barang yang fungsional dan memiliki nilai estetika. Pembuatan
+              KeyClock menerapkan prinsip reuse dan recycle untuk mengurangi
+              limbah serta meningkatkan kreativitas.
+            </p>
+
+            <h3>Alat dan Bahan</h3>
+            <b>Alat:</b>
+            <ul>
+              <li>Gunting</li>
+              <li>Penggaris</li>
+              <li>Pensil atau spidol</li>
+              <li>Lem tembak</li>
+              <li>Obeng</li>
+            </ul>
+
+            <b>Bahan:</b>
+            <ul>
+              <li>Keyboard komputer bekas</li>
+              <li>Mesin jam</li>
+              <li>Jarum jam</li>
+              <li>Papan atau kardus tebal</li>
+              <li>Lem</li>
+              <li>Angka atau tombol keyboard</li>
+              <li>Baterai</li>
+            </ul>
+
+            <h3>Langkah Kerja</h3>
+            <ol>
+              <li>Buat bodi dan dudukan jam berbentuk lingkaran.</li>
+              <li>Tandai 12 titik angka dengan jarak yang sama.</li>
+              <li>Pasang tombol keyboard sebagai penanda angka.</li>
+              <li>Pasang mesin jam pada bagian belakang.</li>
+              <li>Pasang jarum jam, menit, dan detik.</li>
+              <li>Masukkan baterai dan atur waktu.</li>
+            </ol>
+
+            <h3>Estimasi Biaya</h3>
+            <ul>
+              <li>Tombol keyboard bekas: Rp5.000</li>
+              <li>Kardus tebal: Rp0</li>
+              <li>Mesin jam dan jarum: Rp15.000</li>
+              <li>Lem tembak: Rp8.000</li>
+              <li>Baterai: Rp3.000</li>
+              <li>Cat hitam: Rp8.000</li>
+              <li>Penyangga kardus bekas: Rp0</li>
+            </ul>
+            <b>Total: Rp39.000</b>
+          </details>
+        </div>
+
+        <!-- BINGKAI FOTO -->
+        <div class="karya-card">
+          <img src="bingkai-kardus.jpeg" alt="Bingkai Foto" />
+          <h3>Bingkai foto</h3>
+          <p>Karya seni dari kardus yang dibuat menjadi bingkai foto.</p>
+
+          <details>
+            <summary>Lihat Detail</summary>
+            <h4>Ulasan Produk</h4>
+            <p>
+              Bingkai foto dari kardus bekas merupakan produk kerajinan yang
+              dibuat dengan memanfaatkan kardus yang sudah tidak digunakan.
+              Kardus dipotong dan dibentuk menjadi bingkai untuk memajang foto.
+              Produk ini dapat dihias menggunakan kertas warna, kain perca, atau
+              bahan dekoratif lainnya.
+            </p>
+
+            <h3>Alat dan Bahan</h3>
+            <b>Alat:</b>
+            <ul>
+              <li>Gunting</li>
+              <li>Penggaris</li>
+              <li>Pensil</li>
+              <li>Lem tembak</li>
+              <li>Cutter</li>
+            </ul>
+
+            <b>Bahan:</b>
+            <ul>
+              <li>Kardus bekas</li>
+              <li>Kertas warna</li>
+              <li>Foto</li>
+              <li>Stik es krim bekas</li>
+              <li>Hiasan tambahan</li>
+            </ul>
+
+            <h3>Langkah Kerja</h3>
+            <ol>
+              <li>Siapkan alat dan bahan.</li>
+              <li>Buat pola bingkai foto pada kardus.</li>
+              <li>Potong kardus mengikuti pola.</li>
+              <li>Buat lubang di bagian tengah bingkai.</li>
+              <li>Lapisi bingkai menggunakan kertas warna.</li>
+              <li>Tempelkan foto pada bagian belakang.</li>
+              <li>Tambahkan hiasan dari bahan bekas.</li>
+              <li>Buat penyangga dari kardus.</li>
+              <li>Periksa kekuatan dan kerapian bingkai.</li>
+              <li>Bingkai foto siap digunakan.</li>
+            </ol>
+
+            <h3>Estimasi Biaya</h3>
+            <ul>
+              <li>Kardus bekas: Rp0</li>
+              <li>Kertas warna: Rp3.000</li>
+              <li>Lem: Rp5.000</li>
+              <li>Plastik bening: Rp2.000</li>
+            </ul>
+            <b>Total: Rp10.000</b>
+          </details>
+        </div>
+
+        <!-- BUNGA ALUMINIUM -->
+        <div class="karya-card">
+          <img src="bunga-alumunium.jpeg" alt="Bunga Hias Aluminium" />
+          <h3>Bunga hias alumunium</h3>
+          <p>Kreasi bunga hias dari alumunium dengan sentuhan kreativitas.</p>
+
+          <details>
+            <summary>Lihat Detail</summary>
+            <h4>Ulasan Produk</h4>
+            <p>
+              Hiasan bunga dari kaleng aluminium bekas merupakan produk
+              kerajinan yang dibuat dengan memanfaatkan kaleng minuman yang
+              sudah tidak digunakan. Kaleng dibentuk menjadi kelopak bunga,
+              kemudian disusun menjadi hiasan dekoratif.
+            </p>
+
+            <h3>Alat dan Bahan</h3>
+            <b>Alat:</b>
+            <ul>
+              <li>Gunting khusus logam</li>
+              <li>Tang</li>
+              <li>Kuas</li>
+              <li>Lem</li>
+            </ul>
+
+            <b>Bahan:</b>
+            <ul>
+              <li>Kaleng aluminium bekas</li>
+              <li>Cat</li>
+              <li>Kawat bekas</li>
+              <li>Kancing bekas</li>
+            </ul>
+
+            <h3>Langkah Kerja</h3>
+            <ol>
+              <li>Bersihkan kaleng aluminium.</li>
+              <li>Mintalah bantuan orang dewasa untuk memotong kaleng.</li>
+              <li>Bentuk potongan aluminium menjadi kelopak bunga.</li>
+              <li>Susun kelopak hingga membentuk bunga.</li>
+              <li>Rekatkan setiap bagian dengan lem yang sesuai.</li>
+              <li>Cat bunga sesuai warna yang diinginkan.</li>
+              <li>Tambahkan kancing bekas sebagai bagian tengah bunga.</li>
+              <li>Pasang kawat sebagai tangkai dengan bantuan orang dewasa.</li>
+              <li>Hiasan bunga siap dipajang.</li>
+            </ol>
+
+            <h3>Estimasi Biaya</h3>
+            <ul>
+              <li>Kaleng aluminium bekas: Rp0</li>
+              <li>Kawat: Rp3.000</li>
+              <li>Cat atau spidol permanen: Rp5.000</li>
+              <li>Lem: Rp5.000</li>
+              <li>Kertas hijau: Rp2.000</li>
+            </ul>
+            <b>Total: Rp15.000</b>
+          </details>
+        </div>
+
+        <!-- DOMPET -->
+        <div class="karya-card">
+          <img src="dompet.jpeg" alt="Dompet Kain Perca" />
+          <h3>Dompet</h3>
+          <p>Memanfaatkan sampah kain perca menjadi dompet.</p>
+
+          <details>
+            <summary>Lihat Detail</summary>
+            <h4>Ulasan Produk</h4>
+            <p>
+              Dompet dari kain perca merupakan produk kerajinan yang dibuat
+              dengan memanfaatkan sisa potongan kain yang tidak terpakai. Produk
+              ini dapat digunakan untuk menyimpan uang, kartu, atau benda kecil
+              lainnya.
+            </p>
+
+            <h3>Alat dan Bahan</h3>
+            <ul>
+              <li>Kain perca</li>
+              <li>Kain keras atau furing</li>
+              <li>Gunting kain</li>
+              <li>Jarum dan benang jahit</li>
+              <li>Mesin jahit</li>
+              <li>Resleting atau kancing jepret</li>
+              <li>Jarum pentul dan kapur jahit</li>
+            </ul>
+
+            <h3>Langkah Kerja</h3>
+            <ol>
+              <li>Potong kain perca dan kain furing sesuai ukuran.</li>
+              <li>Satukan potongan kain perca hingga membentuk lembaran.</li>
+              <li>Lapisi bagian belakang kain perca dengan kain furing.</li>
+              <li>Pasang resleting pada salah satu sisi kain.</li>
+              <li>Jahit bagian pinggiran dompet dengan rapi.</li>
+              <li>Balik kain melalui resleting yang terbuka.</li>
+              <li>Rapikan sudut-sudut dompet.</li>
+              <li>Dompet siap digunakan.</li>
+            </ol>
+
+            <h3>Estimasi Biaya</h3>
+            <ul>
+              <li>Kain perca: Rp0</li>
+              <li>Benang jahit: Rp2.000</li>
+              <li>Resleting: Rp3.000</li>
+              <li>Kain pelapis: Rp3.000</li>
+              <li>Aksesori atau hiasan: Rp5.000</li>
+            </ul>
+            <b>Total: Rp13.000</b>
+          </details>
+        </div>
+
+        <!-- BUNGA PLASTIK -->
+        <div class="karya-card">
+          <img src="bunga-plastik.jpeg" alt="Bunga Hias Plastik" />
+          <h3>Bunga hias plastik</h3>
+          <p>Memanfaatkan plastik bekas menjadi bunga hias.</p>
+
+          <details>
+            <summary>Lihat Detail</summary>
+            <h4>Ulasan Produk</h4>
+            <p>
+              Bunga hias dari plastik bekas merupakan kerajinan yang
+              memanfaatkan plastik bekas kemasan atau kantong plastik yang
+              bersih. Plastik dibentuk menyerupai kelopak bunga sehingga
+              menghasilkan hiasan yang menarik.
+            </p>
+
+            <h3>Alat dan Bahan</h3>
+            <ul>
+              <li>Kantong plastik bekas berwarna-warni</li>
+              <li>Kawat kecil</li>
+              <li>Gunting</li>
+              <li>Isolasi hijau atau floral tape</li>
+              <li>Plastik hijau</li>
+            </ul>
+
+            <h3>Langkah Kerja</h3>
+            <ol>
+              <li>Potong plastik bekas menjadi beberapa bagian.</li>
+              <li>Bentuk potongan plastik menjadi kelopak bunga.</li>
+              <li>Susun kelopak hingga membentuk bunga.</li>
+              <li>Buat tangkai menggunakan kawat.</li>
+              <li>Satukan kelopak dengan tangkai.</li>
+              <li>Lilitkan floral tape pada bagian tangkai.</li>
+              <li>Bunga hias siap digunakan.</li>
+            </ol>
+
+            <h3>Estimasi Biaya</h3>
+            <ul>
+              <li>Plastik bekas: Rp0</li>
+              <li>Kawat atau sedotan: Rp3.000</li>
+              <li>Lem: Rp5.000</li>
+              <li>Kertas hijau: Rp2.000</li>
+            </ul>
+            <b>Total: Rp10.000</b>
+          </details>
+        </div>
+
+        <!-- KERANJANG KORAN -->
+        <div class="karya-card">
+          <img src="keranjang-koran.jpeg" alt="Keranjang Koran Bekas" />
+          <h3>Keranjang koran bekas</h3>
+          <p>Memanfaatkan koran bekas menjadi keranjang.</p>
+
+          <details>
+            <summary>Lihat Detail</summary>
+            <h4>Ulasan Produk</h4>
+            <p>
+              Keranjang dari koran bekas merupakan kerajinan yang dibuat dengan
+              menggulung dan menyusun kertas koran menjadi bentuk keranjang.
+              Produk ini dapat digunakan untuk menyimpan alat tulis, aksesori,
+              atau benda-benda ringan.
+            </p>
+
+            <h3>Alat dan Bahan</h3>
+            <ul>
+              <li>Koran bekas</li>
+              <li>Lem kertas atau lem kayu</li>
+              <li>Gunting atau cutter</li>
+              <li>Lidi atau tusuk sate</li>
+              <li>Cat (opsional)</li>
+            </ul>
+
+            <h3>Langkah Kerja</h3>
+            <ol>
+              <li>
+                Potong satu lembar halaman koran menjadi empat bagian memanjang.
+              </li>
+              <li>
+                Gulung potongan koran menggunakan lidi hingga berbentuk silinder
+                panjang.
+              </li>
+              <li>Beri lem pada ujung gulungan agar tidak lepas.</li>
+              <li>
+                Buat dasar keranjang dengan menyusun gulungan koran secara
+                menyilang.
+              </li>
+              <li>
+                Anyam gulungan koran secara selang-seling hingga membentuk dasar
+                keranjang.
+              </li>
+              <li>
+                Tekuk ujung gulungan ke atas untuk membentuk dinding keranjang.
+              </li>
+              <li>Lanjutkan anyaman hingga mencapai tinggi yang diinginkan.</li>
+              <li>Rapikan dan rekatkan ujung anyaman.</li>
+              <li>Keranjang siap digunakan.</li>
+            </ol>
+
+            <h3>Estimasi Biaya</h3>
+            <ul>
+              <li>Koran bekas: Rp0</li>
+              <li>Kardus bekas: Rp0</li>
+              <li>Lem: Rp5.000</li>
+              <li>Cat atau bahan pelapis: Rp5.000</li>
+            </ul>
+            <b>Total: Rp10.000</b>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIM KAMI -->
+    <section id="tim" class="section">
+      <h2>Tim Kami</h2>
+
+      <div class="team-container">
+        <div class="team-card">
+          <img src="alwaa.jpeg" alt="Anggota 1" />
+
+          <h3>Alwah Khairunnisa'</h3>
+          <p>Kelas: XPPLG 2</p>
+
+          <div class="team-links">
+            <a href="https://wa.me/6285600417565" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="mailto:alwah.26015@satamail.my.id">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a
+              href="https://www.instagram.com/alwhkhnsyaa_?cplk=MWUxaWN3andvMDkxNg=="
+              target="_blank"
+            >
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img src="nesha.jpeg" alt="Anggota 2" />
+          <h3>Christin Oktavia Nesha</h3>
+          <p>Kelas: X PPLG 2</p>
+          <div class="team-links">
+            <a href="https://wa.me/" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="mailto:">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="team-card">
+          <img
+            src="WhatsApp Image 2026-11-14 at 23.27.26.jpeg"
+            alt="Anggota 3"
+          />
+          <h3>Chintya Aulia Selza</h3>
+          <p>Kelas: X PPLG 2</p>
+          <div class="team-links">
+            <a href="https://wa.me/" target="_blank">
+              <i class="fa-brands fa-whatsapp"></i>
+            </a>
+
+            <a href="mailto:Auliacynthia14@Gmail.com">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+            <a href="" target="_blank">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PESAN DAN KONTAK -->
+    <section id="pesan" class="section pesan">
+      <h2>Hubungi Kami</h2>
+
+      <p class="pesan-subtitle">
+        Punya pertanyaan, saran, atau masukan? Yuk, sampaikan pesanmu kepada
+        kami!
+      </p>
+
+      <div class="contact-container">
+        <div class="contact-info">
+          <h3>Informasi Kami</h3>
+
+          <div class="contact-item">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <p>SMKN Tengaran, Jawa Tengah</p>
+          </div>
+
+          <div class="contact-item">
+            <span><i class="fa-solid fa-envelope"></i></span>
+            <p>Email: Hubungi melalui sekolah</p>
+          </div>
+
+          <div class="contact-item">
+            <span><i class="fa-solid fa-recycle"></i></span>
+            <p>Website edukasi Sampahku Hartaku</p>
+          </div>
+        </div>
+
+        <div class="pesan-card">
+          <h3><i class="fa-solid fa-paper-plane"></i> Kirim Pesan</h3>
+
+          <p>Kami senang menerima pertanyaan dan pendapatmu.</p>
+
+          <form action="#" method="post">
+            <input type="text" placeholder="Masukkan nama kamu" required />
+
+            <input type="email" placeholder="Masukkan email kamu" required />
+
+            <textarea
+              placeholder="Tulis pesanmu di sini..."
+              required
+            ></textarea>
+
+            <button type="submit">
+              Kirim Pesan <i class="fa-solid fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <h2>♻️ KeyClock</h2>
+      <p>Peduli lingkungan dimulai dari langkah kecil.</p>
+
+      <div class="social-media">
+        <a
+          href="https://wa.me/6285600417565"
+          target="_blank"
+          aria-label="WhatsApp"
+        >
+          <i class="fa-brands fa-whatsapp"></i>
+        </a>
+
+        <a href="mailto:alwah.26015@satamail.my.id" aria-label="Email">
+          <i class="fa-solid fa-envelope"></i>
+        </a>
+
+        <a
+          href="https://www.instagram.com/alwhkhnsyaa_?cplk=MWUxaWN3andvMDkxNg=="
+          target="_blank"
+          aria-label="Instagram"
+        >
+          <i class="fa-brands fa-instagram"></i>
+        </a>
+      </div>
+
+      <div class="copyright">© 2026 KeyClock. All Rights Reserved.</div>
+    </footer>
+  </body>
+</html>
+html>

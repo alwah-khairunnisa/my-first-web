@@ -1,0 +1,871 @@
+
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f3f8ff;
+    color: #183b60;
+}
+
+/* NAVBAR */
+.navbar {
+    background: #76ABAE;
+    color: white;
+    padding: 18px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    position: fixed;
+    top: 10px;
+    z-index: 100;
+    width: 90%;
+    left: 5%;
+}
+
+.navbar h2 {
+    font-size: 27px;
+}
+
+.navbar ul {
+    display: flex;
+    gap: 25px;
+    list-style: none;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.navbar a:hover {
+    color: black;
+    background: #F7F2EB;
+}
+
+/* HOME */
+.beranda {
+    min-height: 620px;
+    background: linear-gradient(120deg, #cce8ff, #F7F2EB);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 80px 7% 50px;
+    gap: 30px;
+}
+
+.beranda-text {
+    max-width: 500px;
+}
+
+.beranda h1 {
+    font-size: 42px;
+    color: #104b85;
+    margin-bottom: 15px;
+}
+
+.beranda h3 {
+    margin-bottom: 12px;
+}
+
+.beranda p {
+    line-height: 1.7;
+    margin-bottom: 25px;
+}
+
+.beranda img {
+    object-fit: contain;
+    object-position: center;
+    background: transparent;
+}
+
+.btn {
+    display: inline-block;
+    background: #104b85;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #287fc2;
+}
+
+/* MATERI 3R */
+.materi {
+    padding: 55px 7%;
+    text-align: center;
+    background: white;
+}
+
+.materi h2,
+.section h2 {
+    color: #104b85;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 30px;
+    color: #5482a8;
+    text-align: left;
+    border-left: 5px solid #2585cc;
+    padding-left: 12px;
+}
+
+.materi-container {
+    display: flex;
+    gap: 20px;
+}
+
+.materi-card {
+    flex: 1;
+    padding: 30px 20px;
+    background: #dceeff;
+    border-radius: 15px;
+}
+
+.materi-card h3 {
+    color: #1262a5;
+    margin-bottom: 12px;
+}
+
+/* SECTION UMUM */
+.section {
+    padding: 60px 7%;
+}
+
+/* MAPEL */
+#mapel > h2 {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.mapel-item > h3 {
+    color: #104b85;
+    font-size: 24px;
+    margin-bottom: 15px;
+    border-left: 5px solid #2585cc;
+    padding-left: 12px;
+}
+
+/* GAMBAR DAN KONTEN MAPEL */
+.mapel-box {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    background: #dceeff;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.mapel-box > img {
+    width: 30%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+/* IPAS */
+.mapel-text {
+    flex: 1;
+}
+
+.mapel-text h4 {
+    color: #104b85;
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.mapel-text p {
+    line-height: 1.8;
+}
+
+/* MATEMATIKA */
+.mapel-columns {
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    min-width: 0;
+}
+
+.mapel-card {
+    flex: 1;
+    min-width: 0;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+}
+
+.mapel-card h4 {
+    color: #104b85;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+
+.mapel-card p {
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* GALERI MATEMATIKA 3 KOLOM */
+.math-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    align-items: stretch;
+    width: 100%;
+}
+
+.math-gallery .mapel-card {
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 16px;
+    border-radius: 14px;
+    box-shadow: 0 4px 12px rgba(16, 75, 133, 0.10);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.math-gallery .mapel-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 18px rgba(16, 75, 133, 0.15);
+}
+
+.math-gallery .mapel-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+    background: #f3f8ff;
+    border-radius: 10px;
+    margin-bottom: 14px;
+}
+
+.math-gallery .mapel-card h4 {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+.math-gallery .mapel-card details {
+    margin-top: 8px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.math-gallery .mapel-card details div {
+    margin-top: 10px;
+}
+
+.math-gallery .mapel-card summary {
+    cursor: pointer;
+    color: #104b85;
+    font-weight: bold;
+}
+
+
+/* GAMBAR BERANDA */
+.beranda > img {
+    object-fit: contain !important;
+    object-position: center;
+    width: 45%;
+    height: auto;
+    max-height: 420px;
+    background: transparent;
+}
+
+/* BAHASA INGGRIS */
+
+/* FOTO BAHASA INGGRIS */
+.english-image {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: contain;
+    object-position: center;
+        background: transparent !important;
+      border-radius: 49px;
+      display: block;
+    box-shadow: none !important;  
+    overflow: hidden;
+}
+
+/* TABLET */
+@media (max-width: 1000px) {
+    .english-box {
+        grid-template-columns: 130px repeat(2, minmax(0, 1fr));
+    }
+
+    .english-image {
+        grid-row: span 2;
+    }
+}
+
+/* HP */
+@media (max-width: 650px) {
+    .beranda > img {
+        width: 100%;
+        max-height: 300px;
+        object-fit: contain !important;
+    }
+
+    .english-box {
+        display: flex !important;
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .english-image {
+        width: 150px;
+        height: 250px;
+        min-height: unset;
+        margin: 0 auto;
+        border-radius: 20px;
+    }
+
+    .english-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .english-columns .mapel-card {
+        width: 100%;
+    }
+}
+
+
+/* TIGA KOLOM LAPORAN */
+.english-columns {
+    display: contents;
+}
+
+.english-columns .mapel-card {
+    width: 100%;
+    min-width: 0;
+    padding: 18px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.08);
+    overflow-wrap: anywhere;
+}
+
+.english-columns .mapel-card h4 {
+    color: #104b85;
+    font-size: 18px;
+    margin-bottom: 12px;
+}
+
+.english-columns .mapel-card h3 {
+    color: #104b85;
+    font-size: 17px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.english-columns details {
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 10px 0;
+    overflow-wrap: anywhere;
+}
+
+.english-columns summary {
+    color: #104b85;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 8px 0;
+}
+
+/* KARYA */
+.karya {
+    background: #e7f3ff;
+}
+
+.karya h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.karya-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    align-items: stretch;
+}
+
+.karya-card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    padding: 15px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    min-width: 0;
+}
+
+.karya-card img {
+    display: block;
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 12px;
+}
+
+.karya-card h3 {
+    color: #104b85;
+    margin: 15px 10px 10px;
+}
+
+.karya-card > p {
+    padding: 0 10px;
+    line-height: 1.6;
+}
+
+.karya-card details {
+    margin: 15px 10px 5px;
+    line-height: 1.7;
+    overflow-wrap: anywhere;
+}
+
+.karya-card summary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor: pointer;
+    color: #104b85;
+    font-weight: bold;
+    padding: 9px 18px;
+    background: #dceeff;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.karya-card summary:hover {
+    background: #76ABAE;
+    color: white;
+}
+
+.karya-card details[open] summary {
+    margin-bottom: 12px;
+}
+
+.karya-card details h3,
+.karya-card details h4 {
+    color: #104b85;
+    margin: 15px 0 8px;
+}
+
+.karya-card details p {
+    padding: 0;
+    margin: 8px 0;
+}
+
+.karya-card details ul,
+.karya-card details ol {
+    padding-left: 25px;
+    margin: 8px 0 15px;
+}
+
+/* TIM KAMI */
+#tim h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.team-container {
+    display: flex;
+    gap: 25px;
+}
+
+.team-card {
+    flex: 1;
+    text-align: center;
+    background: #dceeff;
+    padding: 25px 15px;
+    border-radius: 18px;
+    min-width: 0;
+}
+
+.team-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.team-card h3 {
+    color: #104b85;
+    margin-bottom: 10px;
+}
+
+.team-card p {
+    margin: 8px 0;
+    font-size: 14px;
+}
+
+.team-links {
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.team-links a {
+    color: #104b85;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.team-links a:hover {
+    color: #287fc2;
+}
+
+/* PESAN */
+.pesan {
+    background: #e7f3ff;
+    padding: 60px 7%;
+}
+
+.pesan h2 {
+    text-align: center;
+    color: #104b85;
+    margin-bottom: 15px;
+}
+
+.pesan-subtitle {
+    color: #5482a8;
+    text-align: center;
+    line-height: 1.6;
+    margin-bottom: 28px;
+}
+
+/* DUA KOTAK PESAN SEJAJAR */
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.contact-info,
+.pesan-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    height: 100%;
+    margin: 0;
+    padding: 28px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 5px 18px rgba(16, 75, 133, 0.10);
+    text-align: left;
+}
+
+.contact-info h3,
+.pesan-card h3 {
+    color: #104b85;
+    font-size: 22px;
+    margin-bottom: 18px;
+}
+
+/* INFORMASI KONTAK */
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.contact-item span {
+    width: 46px;
+    height: 46px;
+    min-width: 46px;
+    background: #eaf4ff;
+    color: #104b85;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
+
+.contact-item p {
+    color: #555;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+/* FORM PESAN */
+.pesan-card > p {
+    color: #5482a8;
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.pesan-card form {
+    width: 100%;
+    max-width: none;
+    margin: 18px 0 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: transparent;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.pesan input,
+.pesan textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #aacbea;
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.pesan input:focus,
+.pesan textarea:focus {
+    border-color: #104b85;
+}
+
+.pesan textarea {
+    min-height: 140px;
+    resize: vertical;
+}
+
+.pesan button {
+    background: #104b85;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.pesan button:hover {
+    background: #76ABAE;
+}
+
+/* FOOTER */
+footer {
+    background: #103f70;
+    color: white;
+    text-align: center;
+    padding: 35px 20px 0;
+    line-height: 1.8;
+}
+
+footer h2 {
+    margin-bottom: 10px;
+}
+
+/* IKON SOSIAL MEDIA */
+footer .social-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+footer .social-media a {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background: white;
+    color: #104b85;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer .social-media a:hover {
+    background: #76ABAE;
+    color: white;
+    transform: translateY(-4px);
+}
+
+.copyright {
+    border-top: 1px solid #7194b5;
+    margin-top: 25px;
+    padding: 15px;
+}
+
+/* RESPONSIVE TABLET */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .navbar ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    .beranda {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .beranda img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .beranda h1 {
+        font-size: 32px;
+    }
+
+    .materi-container,
+    .mapel-box,
+    .team-container {
+        flex-direction: column;
+    }
+
+    .mapel-box > img {
+        width: 100%;
+        height: 220px;
+    }
+
+    .math-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .math-gallery .mapel-card img {
+        height: 260px;
+    }
+
+    /* BAHASA INGGRIS TABLET */
+    .english-box {
+        grid-template-columns: 130px repeat(2, minmax(0, 1fr));
+    }
+
+    .english-image {
+        grid-row: span 2;
+        min-height: 300px;
+    }
+
+    .karya-container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section {
+        padding: 40px 5%;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 480px) {
+
+    .navbar {
+        width: 94%;
+        left: 3%;
+        padding: 15px 10px;
+    }
+
+    .navbar h2 {
+        font-size: 22px;
+    }
+
+    .navbar ul {
+        gap: 8px;
+    }
+
+    .navbar a {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+
+    .beranda {
+        padding: 130px 5% 40px;
+    }
+
+    .beranda h1 {
+        font-size: 28px;
+    }
+
+    .karya-container {
+        grid-template-columns: 1fr;
+    }
+
+    .math-gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .math-gallery .mapel-card img {
+        height: 300px;
+    }
+
+    /* BAHASA INGGRIS HP */
+    .english-box {
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        gap: 15px;
+    }
+
+    .english-image {
+        width: 150px;
+        height: 250px;
+        min-height: unset;
+        margin: 0 auto;
+    }
+
+    .english-columns {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    .english-columns .mapel-card {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .contact-info,
+    .pesan-card {
+        padding: 22px;
+    }
+
+    .karya-card img {
+        height: 280px;
+    }
+}
